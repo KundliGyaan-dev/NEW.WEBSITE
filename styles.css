@@ -1,8 +1,8 @@
 body {
-    font-family: 'Graduate', sans-serif;
-    margin: 0;
-    padding: 20px;
-   font-size: 12px;
+     font-family: 'Graduate', sans-serif;
+    /* margin: 0; */
+    /* padding: 20px; */
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,7 +180,7 @@ transition: background-color 1s;
     text-align: center;
     padding: 50px;
     background-color: #efeae3;
-    width:100%;
+    width:100vw;
 }
 .articles-section h2 {
     margin-bottom: 20px;
