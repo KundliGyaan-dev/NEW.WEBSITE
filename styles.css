@@ -182,6 +182,76 @@ transition: background-color 1s;
     margin-right: 8px;
     color: #a62a2a;
 }
+.our-services {
+    text-align: center;
+    padding: 50px;
+    background-color: #efeae3;
+    width: 100vw;
+    
+    
+}
+
+.our-services h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #a62a2a;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #d9d9d9;
+    padding: 20px;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.service-box h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #a62a2a;
+}
+
+.service-box p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    color: #555;
+}
+
+.service-box a {
+    text-decoration: none;
+    color: #d63031;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: #b5651d;
+}
+
+.service-box:hover a {
+    color: #333;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
 .articles-section {
     text-align: center;
     padding: 50px;
