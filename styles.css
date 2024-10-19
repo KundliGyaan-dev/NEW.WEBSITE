@@ -86,21 +86,21 @@ transition: background-color 1s;
     font-size: 16px;
     border: 0.7px solid #a62a2a;
     border-radius: 7px;
-    width: 250px; /* Adjust the width */
+    width: 250px; 
     margin-right: 10px;
 }
 
 .subscribe-form button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #a62a2a; /* Adjust to match the button color */
+    background-color: #a62a2a; 
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 .subscribe-form button:hover {
-    background-color: #e74c3c; /* Adjust hover color if necessary */
+    background-color: #e74c3c; 
 }
 .copyright-line{
     margin-left: 420px;
@@ -123,7 +123,7 @@ transition: background-color 1s;
 
 .footer-section h3 {
     font-size: 18px;
-    color: #a62a2a; /* Adjust the color */
+    color: #a62a2a; 
     margin-bottom: 15px;
 }
 
@@ -326,4 +326,180 @@ transition: background-color 1s;
     color: #888;
 }
 
+
+/* landing page*/
+.kundli-section {
+    background-color: #efeae3;
+    padding: 20px;
+}
+
+.container {
+    display:block;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    
+}
+
+.content {
+    width: 750px;
+    height:200px;
+    text-align: left;
+    
+}
+
+.content h1 {
+    
+    font-size: 2.2rem;
+    color: #a83d38;
+    font-weight: 300;
+    margin-bottom: 2px;
+}
+
+.content h2 {
+   
+    font-size: 3.5rem;
+    color: #a83d38;
+    font-weight: 700;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px; /* Increased spacing to give more room before the horoscope section */
+}
+.chat-btn{
+    background-color: #a83d38;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #a83d38, #f5a956);
+   
+}
+
+.havan-btn {
+    color:grey;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    /*transition: background 0.3s ease;*/
+    display: flex;
+    align-items: center;
+}
+
+.chat-btn fab fa-whatsapp {
+    margin-right: 10px;
+    color: white;
+    size: 10px;
+}
+
+.havan-btn {
+   /* background-color: #f5a956;*/
+   border: 2px solid #a83d38;
+}
+.havan-btn:hover, .chat-btn:hover {
+    opacity: 0.9;
+}
+.horoscope {
+    margin-top: 110px;
+    font-size: 60px;
+    text-align: center; /* Centering the horoscope section */
+    margin-bottom: 50px; /* Providing space below the horoscope section */
+    font-family:'Times New Roman', Times, serif;
+    width:1000px;
+
+}
+
+.horoscope-text {
+    font-size: 1.5rem;
+    color: #444444f8;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.horoscope-subtext {
+    font-size: 1.2rem;
+    color: #444444f8;
+    margin-bottom: 10px;
+}
+
+.horoscope-btn {
+    display: inline-block;
+    background-color: #a83d38;
+    color: #fff;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.wheel-image img {
+    max-width: 350px;
+    height: auto;
+}
+
+/* FAQs*/
+.faq-section {
+    padding: 50px;
+    background-color: #efeae3 ;
+}
+.faq-section h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:#4d4d4d;
+    font-size: 30px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    width:1200px;
+    background-color:#efeae3 ;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border:1px solid #a83d38;
+}
+
+.faq {
+    margin-bottom: 30px;
+}
+.subheading{
+    color:#4d4d4d;
+    font-size: 20px;
+    
+    font-family: 'Times New Roman', Times, serif;
+}
+.faq-title {
+    background-color: #a83d38;
+    text-align: center;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.faq-text {
+    margin: 15px 0 0 0;
+    font-size: 1em;
+    color: #4d4d4d;
+    line-height: 1.6em;
+    
+    padding: 15px;
+    border-radius: 5px;
+}
 
