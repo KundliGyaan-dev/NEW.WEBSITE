@@ -5,7 +5,9 @@
     font-style: normal;
   } */
 body {
-     font-family: "Poppins", sans-serif;
+    background-color: #e7cfb9;
+    font-family: "Poppins", sans-serif;
+    
     /* margin: 0; */
     /* padding: 20px; */
     font-size: 12px;
@@ -17,20 +19,19 @@ body {
 }
 
 .header {
-    background-color: white; 
+    background-color: #e7cfb9;
 
-padding: 5px;
-display: flex;
-align-items: center;
-
+    padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
     margin: 10px;
-    padding:5px;
+    padding: 5px;
     display: flex;
     gap: 25px;
-    border:2px solid #a62a2a;
+    border: 2px solid #a62a2a;
     box-shadow: 0 2px 5px rgba(209, 207, 207, 0.1);
     border-radius: 30px;
 }
@@ -50,62 +51,68 @@ align-items: center;
 
 .login-btn {
     background-color: #a62a2a;
-color: white;
-border: none;
-padding: 14px 25px;
-border-radius: 30px;
-cursor: pointer;
-transition: background-color 1s;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 1s;
 }
 
 .login-btn:hover {
     background-color: #a62a2a;
 }
-.foot-pane1{
-    background-color:#efeae3;
-    height:200px;
+
+.foot-pane1 {
+    background-color: e7cfb9;
+    height: 200px;
     text-align: center;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     margin-top: 50px 0;
     padding: 20px;
 }
-.foot-pane1 h2{
+
+.foot-pane1 h2 {
     margin-top: 40px;
     color: rgb(106, 17, 17);
     font-size: 26px;
 }
-.subscribe-form{
+
+.subscribe-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
+
 .subscribe-form input {
     padding: 12px;
     font-size: 16px;
     border: 0.7px solid #a62a2a;
     border-radius: 7px;
-    width: 250px; 
+    width: 250px;
     margin-right: 10px;
 }
 
 .subscribe-form button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #a62a2a; 
+    background-color: #a62a2a;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
+
 .subscribe-form button:hover {
-    background-color: #e74c3c; 
+    background-color: #e74c3c;
 }
-.copyright-line{
+
+.copyright-line {
     margin-left: 420px;
-    width:39%;
-    display:flex;
+    width: 39%;
+    display: flex;
     text-align: center;
     justify-content: space-between;
 }
@@ -123,11 +130,13 @@ transition: background-color 1s;
 
 .footer-section h3 {
     font-size: 18px;
-    color: #a62a2a; 
+    color: #a62a2a;
     margin-bottom: 15px;
 }
 
-.footer-section p, .footer-section ul, .footer-section li {
+.footer-section p,
+.footer-section ul,
+.footer-section li {
     font-size: 14px;
     color: #555;
     margin-bottom: 10px;
@@ -178,17 +187,17 @@ transition: background-color 1s;
     color: #555;
 }
 
-.footer-section .fas, .footer-section .fab {
+.footer-section .fas,
+.footer-section .fab {
     margin-right: 8px;
     color: #a62a2a;
 }
+
 .our-services {
     text-align: center;
     padding: 50px;
-    background-color: #efeae3;
+    background-color: #e7cfb9;
     width: 100vw;
-    
-    
 }
 
 .our-services h2 {
@@ -255,13 +264,14 @@ transition: background-color 1s;
 .articles-section {
     text-align: center;
     padding: 50px;
-    background-color: #efeae3;
-    width:100vw;
+    background-color: #e7cfb9;
+    width: 100vw;
 }
+
 .articles-section h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
-    color:rgb(106, 17, 17);
+    color: rgb(106, 17, 17);
 }
 
 .articles-container {
@@ -275,7 +285,7 @@ transition: background-color 1s;
     border: 2px solid #d9d9d9;
     padding: 20px;
     width: 300px;
-    height:300px;
+    height: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 10px;
 }
@@ -283,7 +293,7 @@ transition: background-color 1s;
 .article-box h3 {
     margin-bottom: 15px;
     font-size: 1.5em;
-    color:rgb(106, 17, 17);
+    color: rgb(106, 17, 17);
 }
 
 .article-box p {
@@ -294,7 +304,7 @@ transition: background-color 1s;
 
 .article-box a {
     text-decoration: none;
-    color:#d63031;
+    color: #d63031;
     font-weight: bold;
     font-size: 1.1em;
 }
@@ -308,50 +318,50 @@ transition: background-color 1s;
 .article-box:hover a {
     color: #333;
 }
+
 .user-testimonials {
     margin-top: 50px;
 }
+
 .user-testimonials h3 {
     font-size: 2em;
     margin-bottom: 20px;
-    color:rgb(106, 17, 17);
+    color: rgb(106, 17, 17);
 }
+
 .user-testimonials p {
     font-size: 1.2em;
     margin-bottom: 10px;
-    color:rgb(106, 17, 17);
+    color: rgb(106, 17, 17);
 }
+
 .user-testimonials span {
     font-style: italic;
     color: #888;
 }
 
-
 /* landing page*/
 .kundli-section {
-    background-color: #efeae3;
+    background-color: #e7cfb9;
     padding: 20px;
 }
 
 .container {
-    display:block;
+    display: block;
     justify-content: space-evenly;
     align-items: flex-start;
     max-width: 1100px;
     margin: auto;
     width: 100%;
-    
 }
 
 .content {
     width: 750px;
-    height:200px;
+    height: 200px;
     text-align: left;
-    
 }
 
 .content h1 {
-    
     font-size: 2.2rem;
     color: #a83d38;
     font-weight: 300;
@@ -359,7 +369,6 @@ transition: background-color 1s;
 }
 
 .content h2 {
-   
     font-size: 3.5rem;
     color: #a83d38;
     font-weight: 700;
@@ -370,9 +379,11 @@ transition: background-color 1s;
 .buttons {
     display: flex;
     gap: 15px;
-    margin-bottom: 40px; /* Increased spacing to give more room before the horoscope section */
+    margin-bottom: 40px;
+    /* Increased spacing to give more room before the horoscope section */
 }
-.chat-btn{
+
+.chat-btn {
     background-color: #a83d38;
     color: #fff;
     border: none;
@@ -384,11 +395,10 @@ transition: background-color 1s;
     display: flex;
     align-items: center;
     background: linear-gradient(90deg, #a83d38, #f5a956);
-   
 }
 
 .havan-btn {
-    color:grey;
+    color: grey;
     border: none;
     padding: 12px 25px;
     font-size: 1rem;
@@ -406,20 +416,28 @@ transition: background-color 1s;
 }
 
 .havan-btn {
-   /* background-color: #f5a956;*/
-   border: 2px solid #a83d38;
+    /* background-color: #f5a956;*/
+    border: 2px solid #a83d38;
 }
-.havan-btn:hover, .chat-btn:hover {
+
+.havan-btn:hover,
+.chat-btn:hover {
     opacity: 0.9;
 }
+
+.horoscopeandwheel{
+    display: flex;
+}
+
 .horoscope {
     margin-top: 110px;
     font-size: 60px;
-    text-align: center; /* Centering the horoscope section */
-    margin-bottom: 50px; /* Providing space below the horoscope section */
-    font-family:'Times New Roman', Times, serif;
-    width:1000px;
-
+    text-align: center;
+    /* Centering the horoscope section */
+    margin-bottom: 50px;
+    /* Providing space below the horoscope section */
+    font-family: "Poppins", sans-serif;
+    width: 1000px;
 }
 
 .horoscope-text {
@@ -447,42 +465,46 @@ transition: background-color 1s;
 }
 
 .wheel-image img {
-    max-width: 350px;
-    height: auto;
+    padding: 20px;
+    margin-left: 24rem;
+    max-height: fit-content;
 }
 
 /* FAQs*/
 .faq-section {
     padding: 50px;
-    background-color: #efeae3 ;
+    background-color: #e7cfb9;
 }
-.faq-section h1{
+
+.faq-section h1 {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color:#4d4d4d;
+    font-family: "Poppins", sans-serif;
+    color: #4d4d4d;
     font-size: 30px;
 }
 
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
-    width:1200px;
-    background-color:#efeae3 ;
+    width: 1200px;
+    background-color: #efeae3;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border:1px solid #a83d38;
+    border: 1px solid #a83d38;
 }
 
 .faq {
     margin-bottom: 30px;
 }
-.subheading{
-    color:#4d4d4d;
+
+.subheading {
+    color: #4d4d4d;
     font-size: 20px;
-    
-    font-family: 'Times New Roman', Times, serif;
+
+    font-family: "Poppins", sans-serif;
 }
+
 .faq-title {
     background-color: #a83d38;
     text-align: center;
@@ -490,7 +512,7 @@ transition: background-color 1s;
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 1.2em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .faq-text {
@@ -498,8 +520,7 @@ transition: background-color 1s;
     font-size: 1em;
     color: #4d4d4d;
     line-height: 1.6em;
-    
+
     padding: 15px;
     border-radius: 5px;
 }
-
