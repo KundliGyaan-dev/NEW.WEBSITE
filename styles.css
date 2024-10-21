@@ -191,10 +191,14 @@ transition: background-color 1s;
     
 }
 
+
+/*our services*/
+
 .our-services h2 {
     margin-bottom: 20px;
     font-size: 2.5em;
-    color: #a62a2a;
+    /*color: #a62a2a;*/
+    color:rgb(106, 17, 17);
 }
 
 .services-container {
@@ -220,7 +224,8 @@ transition: background-color 1s;
 .service-box h3 {
     margin-bottom: 15px;
     font-size: 1.5em;
-    color: #a62a2a;
+    /*color: #a62a2a;*/
+    color:rgb(106, 17, 17);
 }
 
 .service-box p {
@@ -251,6 +256,9 @@ transition: background-color 1s;
     height: 50px;
     margin-bottom: 15px;
 }
+
+
+/*latest articles*/
 
 .articles-section {
     text-align: center;
@@ -444,6 +452,9 @@ transition: background-color 1s;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+}
+.horoscope-btn:hover{
+ background-color: #e74c3c;
 }
 
 .wheel-image img {
