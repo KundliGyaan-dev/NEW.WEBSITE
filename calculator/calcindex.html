@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaldean Numerology Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #f7d9c4, #fad0c4);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 28px;
+            color: #333333;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #ff7a59;
+        }
+        button {
+            background-color: #ff7a59;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff5722;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+            color: #333333;
+        }
+        .result p {
+            margin: 5px 0;
+        }
+        .highlight {
+            color: #ff5722;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chaldean Numerology Calculator</h1>
+        <p>Find your numerological value and its meaning.</p>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="calculateNumerology()">Calculate</button>
+        <div class="result" id="result"></div>
+        <footer>Designed with ♥ by Numerology Enthusiasts</footer>
+    </div>
+
+    <script>
+        // Chaldean Numerology Values
+        const chaldeanMap = {
+            A: 1, B: 2, C: 3, D: 4, E: 5, F: 8,
+            G: 3, H: 5, I: 1, J: 1, K: 2, L: 3,
+            M: 4, N: 5, O: 7, P: 8, Q: 1, R: 2,
+            S: 3, T: 4, U: 6, V: 6, W: 6, X: 5,
+            Y: 1, Z: 7
+        };
+
+        // Function to calculate numerology and reduce to single digitk
+        function calculateNumerology() {
+            const name = document.getElementById('nameInput').value.toUpperCase().replace(/[^A-Z]/g, '');
+            let total = 0;
+
+            // Calculate the total numerology value
+            for (let char of name) {
+                total += chaldeanMap[char] || 0;
+            }
+
+            // Reduce the total to a single digit
+            let reducedTotal = total;
+            let steps = [];
+
+            while (reducedTotal > 9 && reducedTotal !== 11 && reducedTotal !== 22) {
+                const digits = reducedTotal.toString().split('').map(Number);
+                steps.push(digits.join(' + '));
+                reducedTotal = digits.reduce((sum, digit) => sum + digit, 0);
+            }
+
+            // Display the results
+            const resultElement = document.getElementById('result');
+            if (name) {
+                resultElement.innerHTML = `
+                    <p>The total numerology value of "<span class="highlight">${name}</span>" is: <span class="highlight">${total}</span></p>
+                    ${steps.length > 0 ? <p>Reduction steps: <span class="highlight">${steps.join(' → ')}</span></p> : ''}
+                    <p>The final reduced value is: <span class="highlight">${reducedTotal}</span></p>
+                `;
+            } else {
+                resultElement.innerHTML = '<p>Please enter a valid name.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
